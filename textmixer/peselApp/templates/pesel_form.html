@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Walidator PESEL</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="pesel-form">
+            <h1>Walidator PESEL</h1>
+
+            <div class="info-box">
+                <p>Wprowadź numer PESEL, a aplikacja sprawdzi jego <strong>poprawność</strong> na podstawie sumy kontrolnej. Dodatkowo wyświetlimy <strong>datę urodzenia</strong> oraz <strong>płeć</strong></p>    
+                <p>Przykład poprawnego PESEL: <code>44051401359</code></p>
+            </div>
+
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Sprawdź</button>
+            </form>
+
+            {% if info %}
+                {% if info.valid %}
+                    <p><strong>PESEL jest poprawny</strong></p>
+                    <p>Data urodzenia: {{ info.birthdate }}</p>
+                    <p>Płeć: {{ info.gender }}</p>
+                {% else %}
+                    <p><strong>PESEL jest niepoprawny</strong></p>
+                {% endif %}
+            {% endif %}
+            
+            <a href="/">⬅ Wróć do strony głównej</a>
+        </div>
+    </div>
+</body>
+</html>

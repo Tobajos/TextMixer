@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wynik</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="text-result">
+            <h1>Zmodyfikowany tekst</h1>
+            <pre>{{ result }}</pre>
+            <a href="/">⬅ Wróć do strony głównej</a>
+        </div>
+    </div>
+</body>
+</html>

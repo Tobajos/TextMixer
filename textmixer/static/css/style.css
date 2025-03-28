@@ -1,0 +1,124 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.tiles {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.tile {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 220px;
+    text-align: center;
+    transition: transform 0.2s ease, background 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+    background: #f6fff6;
+}
+
+
+.pesel-form {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pesel-form p {
+    font-size: 18px;
+    color: #333;
+}
+
+.pesel-form input, .pesel-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.text-form {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.text-form input[type="file"],
+.text-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.text-form button:hover{
+    cursor: pointer;
+}
+
+.text-result {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.text-result pre {
+    white-space: pre-wrap;
+    text-align: left;
+    font-family: Consolas, monospace;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+a.tile {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 220px;
+    text-align: center;
+    transition: transform 0.2s ease, background 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+}
+
+a.tile:hover {
+    transform: scale(1.05);
+    background: #f6fff6;
+}
+
+

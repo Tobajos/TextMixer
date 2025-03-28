@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Processor</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="text-form">
+            <h1>Prześlij plik tekstowy</h1>
+
+            <div class="info-box">
+                <p>Wgraj plik z tekstem, a każde słowo w nim zostanie <strong>przemieszane</strong> - zachowując <strong>pierwszą i ostatnią literę</strong> na swoim miejscu.</p>
+                <p>Przykład: <code>komputer</code> → <code>koupmter</code></p>
+            </div>
+
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Prześlij</button>
+            </form>
+            
+            <a href="/">⬅ Wróć do strony głównej</a>
+        </div>
+    </div>
+</body>
+</html>
