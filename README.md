@@ -5,7 +5,6 @@
 1. **Miksowanie tekstu** – wgrany plik tekstowy zostaje przetworzony tak, aby każde słowo miało pomieszane litery w środku, ale pierwsza i ostatnia litera pozostały na miejscu.  
 2. **Walidator PESEL** – sprawdza poprawność numeru PESEL, a jeśli jest poprawny, wyświetla datę urodzenia i płeć.
 
----
 
 
 ---
