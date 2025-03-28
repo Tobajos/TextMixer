@@ -30,7 +30,7 @@
   ```sh
   venv\Scripts\activate        # Windows
   ```
-# lub
+## lub
 
   ```sh
   source venv/bin/activate     # macOS/Linux
